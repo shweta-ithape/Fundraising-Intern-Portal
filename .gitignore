@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+dist/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Build outputs (if you use a bundler later)
+build/
