@@ -32,3 +32,13 @@ fundraising-portal/
 ├── data.json 
 ├── .gitignore
 └── README.md
+
+## 📸 Screenshots
+
+### 🔐 Login & Signup
+<img src="images/login.png" width="45%" alt="Login Page"/>
+<img src="images/signup.png" width="45%" alt="Signup Page"/>
+
+### 📊 Dashboard & 🏆 Leaderboard
+<img src="images/dashboard.png" width="45%" alt="Dashboard"/>
+<img src="images/leaderboard.png" width="45%" alt="Leaderboard"/>
