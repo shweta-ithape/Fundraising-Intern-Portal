@@ -1,0 +1,67 @@
+{
+  "current_intern": {
+    "name": "Shweta Sharma",
+    "referral_code": "SHWETA2025",
+    "total_donations": 12450,
+    "monthly_donations": 3200,
+    "rank": 3
+  },
+  "leaderboard": [
+    {
+      "rank": 1,
+      "name": "Arjun Patel",
+      "referral_code": "ARJUN2025",
+      "total_donations": 18750,
+      "monthly_donations": 4200
+    },
+    {
+      "rank": 2,
+      "name": "Priya Singh",
+      "referral_code": "PRIYA2025",
+      "total_donations": 15300,
+      "monthly_donations": 3800
+    },
+    {
+      "rank": 3,
+      "name": "Shweta Sharma",
+      "referral_code": "SHWETA2025",
+      "total_donations": 12450,
+      "monthly_donations": 3200
+    },
+    {
+      "rank": 4,
+      "name": "Rahul Kumar",
+      "referral_code": "RAHUL2025",
+      "total_donations": 11200,
+      "monthly_donations": 2900
+    },
+    {
+      "rank": 5,
+      "name": "Anita Verma",
+      "referral_code": "ANITA2025",
+      "total_donations": 9800,
+      "monthly_donations": 2500
+    },
+    {
+      "rank": 6,
+      "name": "Vikash Gupta",
+      "referral_code": "VIKASH2025",
+      "total_donations": 8900,
+      "monthly_donations": 2100
+    },
+    {
+      "rank": 7,
+      "name": "Sneha Joshi",
+      "referral_code": "SNEHA2025",
+      "total_donations": 7600,
+      "monthly_donations": 1800
+    },
+    {
+      "rank": 8,
+      "name": "Amit Sharma",
+      "referral_code": "AMIT2025",
+      "total_donations": 6500,
+      "monthly_donations": 1500
+    }
+  ]
+}

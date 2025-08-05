@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraising Intern Portal</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="page active">
+        <div class="login-container">
+            <div class="login-card">
+                <h1>🌟 FundRaise Portal</h1>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <button class="btn" onclick="login()">Login</button>
+                <button class="btn btn-secondary" onclick="showSignup()">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Page -->
+    <div id="signupPage" class="page">
+        <div class="login-container">
+            <div class="login-card">
+                <h1>✨ Join FundRaise</h1>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password">
+                </div>
+                <button class="btn" onclick="signup()">Create Account</button>
+                <button class="btn btn-secondary" onclick="showLogin()">Back to Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboardPage" class="page">
+        <div class="container">
+            <div class="header">
+                <h1>🎯 Intern Dashboard</h1>
+                <div class="nav-buttons">
+                    <button class="nav-btn active" onclick="showDashboard()">Dashboard</button>
+                    <button class="nav-btn" onclick="showLeaderboard()">Leaderboard</button>
+                    <button class="nav-btn" onclick="logout()">Logout</button>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>👨‍💼 Intern Profile</h3>
+                    <p><strong>Name:</strong> <span id="internName">Shweta Sharma</span></p>
+                    <p><strong>Department:</strong> Marketing</p>
+                    <p><strong>Start Date:</strong> Jan 2025</p>
+                    <div class="referral-code" id="referralCode">SHWETA2025</div>
+                </div>
+
+                <div class="card">
+                    <h3>💰 Total Donations</h3>
+                    <div class="stat-value" id="totalDonations">$12,450</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 82%"></div>
+                    </div>
+                    <p>Goal: $15,000 (82% Complete)</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 This Month</h3>
+                    <div class="stat-value" id="monthlyDonations">$3,200</div>
+                    <p><strong>Donors:</strong> 24 people</p>
+                    <p><strong>Avg Donation:</strong> $133</p>
+                </div>
+
+                <div class="card">
+                    <h3>🏆 Rank</h3>
+                    <div class="stat-value">#3</div>
+                    <p>Out of 15 interns</p>
+                    <p><strong>Points:</strong> 1,245</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎁 Rewards & Unlockables</h3>
+                <div class="rewards-grid">
+                    <div class="reward-item unlocked">
+                        <h4>🥉 Bronze Fundraiser</h4>
+                        <p>Raised $5,000+</p>
+                        <small>✓ Unlocked!</small>
+                    </div>
+                    <div class="reward-item unlocked">
+                        <h4>🥈 Silver Fundraiser</h4>
+                        <p>Raised $10,000+</p>
+                        <small>✓ Unlocked!</small>
+                    </div>
+                    <div class="reward-item">
+                        <h4>🥇 Gold Fundraiser</h4>
+                        <p>Raise $15,000+</p>
+                        <small>$2,550 to go!</small>
+                    </div>
+                    <div class="reward-item">
+                        <h4>💎 Diamond Elite</h4>
+                        <p>Raise $25,000+</p>
+                        <small>$12,550 to go!</small>
+                    </div>
+                    <div class="reward-item unlocked">
+                        <h4>🎯 Top Performer</h4>
+                        <p>Top 5 this month</p>
+                        <small>✓ Unlocked!</small>
+                    </div>
+                    <div class="reward-item">
+                        <h4>👑 Fundraising King</h4>
+                        <p>Reach #1 position</p>
+                        <small>Beat 2 more interns!</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard Page -->
+    <div id="leaderboardPage" class="page">
+        <div class="container">
+            <div class="header">
+                <h1>🏆 Leaderboard</h1>
+                <div class="nav-buttons">
+                    <button class="nav-btn" onclick="showDashboard()">Dashboard</button>
+                    <button class="nav-btn active" onclick="showLeaderboard()">Leaderboard</button>
+                    <button class="nav-btn" onclick="logout()">Logout</button>
+                </div>
+            </div>
+
+            <div class="leaderboard-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Intern Name</th>
+                            <th>Referral Code</th>
+                            <th>Total Raised</th>
+                            <th>This Month</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody">
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
